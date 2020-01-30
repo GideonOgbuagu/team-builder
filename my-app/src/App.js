@@ -20,7 +20,7 @@ function App() {
       email: teamMember.email,
       role: teamMember.role
     }
-    setTeam({...team, newTeamMember});
+    setTeam([...team, newTeamMember]);
   }
 
   return (

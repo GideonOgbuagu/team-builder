@@ -1,17 +1,18 @@
 import React from 'react';
+import './Team.css'
 
-function Teams(props) {
+function Team(props) {
     return (
     <div>
-        {props.team.map(member => {
+        {props.team.map(member => (
             <div className="card-container">
-                <h3>{memberName}</h3>
-                <p>{email}</p>
-                <p>{role}</p>
+                <h3>{member.memberName}</h3>
+                <p>{member.email}</p>
+                <p>{member.role}</p>
             </div>
-        })}   
+        ))}   
     </div>
     )
 }
 
-export default Teams;
+export default Team;
